@@ -1,0 +1,12 @@
+{
+    "L0-DycCXWRW27??fy;?=": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPD//wDw//8A/9L9APBE9P8v0v3//0Td9O7u8kJPRN9ELiLyQk/d3UJO7vL/T9TdQk9E8v9PRN9ET0REQv9E3fRfRERC8ET0//9ERP/w//8A8P9EDwAAAAAA8P8PAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "Character"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
