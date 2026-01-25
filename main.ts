@@ -18,8 +18,19 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile6`, function (sprite, l
         color.startFade(color.Black, color.originalPalette)
         story.cancelAllCutscenes()
     })
-    mySprite.setVelocity(50, 50)
-    mySprite.setPosition(0, 0)
+    tiles.setCurrentTilemap(tilemap`level2`)
+    mySprite.setPosition(120, 30)
+    mySprite.setVelocity(0, 0)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile34`, function (sprite, location) {
+    story.startCutscene(function () {
+        color.startFade(color.originalPalette, color.Black)
+        color.startFade(color.Black, color.originalPalette)
+        story.cancelAllCutscenes()
+    })
+    tiles.setCurrentTilemap(tilemap`level`)
+    mySprite.setPosition(120, 30)
+    mySprite.setVelocity(0, 0)
 })
 controller.anyButton.onEvent(ControllerButtonEvent.Released, function () {
     music.stopAllSounds()
