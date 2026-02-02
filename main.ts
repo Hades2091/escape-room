@@ -35,7 +35,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile34`, function (sprite, 
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile7`, function (sprite, location) {
     if (controller.B.isPressed()) {
-        game.splash("Nothing specil just normal shelf stocked with supplies")
+        game.showLongText("Nothing specil just normal shelf stocked with supplies", DialogLayout.Bottom)
     }
     mySprite.x += -5
 })
@@ -67,7 +67,7 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile9`, function (sprite, location) {
     if (controller.B.isPressed()) {
-        game.splash("Nothing specil just normal shelf stocked with supplies")
+        game.showLongText("Nothing specil just normal shelf stocked with supplies", DialogLayout.Bottom)
     }
     mySprite.x += 5
 })
