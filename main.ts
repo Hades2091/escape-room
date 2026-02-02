@@ -23,7 +23,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile6`, function (sprite, l
         mySprite.setPosition(120, 30)
         mySprite.setVelocity(0, 0)
     } else {
-        mySprite.y += 20
+        mySprite.y += 10
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile34`, function (sprite, location) {
