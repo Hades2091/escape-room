@@ -7,6 +7,11 @@ namespace SpriteKind {
     export const Door = SpriteKind.create()
     export const Puzzle1A = SpriteKind.create()
 }
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile38`, function (sprite, location) {
+    if (controller.B.isPressed()) {
+        game.showLongText("A pressure plate with a carving of a west facing arrow", DialogLayout.Bottom)
+    }
+})
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.setImage(assets.image`myImage`)
     music.setVolume(15)
@@ -70,6 +75,16 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile9`, function (sprite, l
     }
     mySprite.x += 5
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile39`, function (sprite, location) {
+    if (controller.B.isPressed()) {
+        game.showLongText("A pressure plate with a carving of a south facing arrow", DialogLayout.Bottom)
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile37`, function (sprite, location) {
+    if (controller.B.isPressed()) {
+        game.showLongText("A pressure plate with a carving of an east facing arrow", DialogLayout.Bottom)
+    }
+})
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.setImage(img`
         . . . . . f f f f f f . . . . . 
@@ -94,7 +109,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile36`, function (sprite, location) {
     if (controller.B.isPressed()) {
-        game.showLongText("A pressure plate with a carving of a upwards facing arrow", DialogLayout.Bottom)
+        game.showLongText("A pressure plate with a carving of a north facing arrow", DialogLayout.Bottom)
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile8`, function (sprite, location) {
