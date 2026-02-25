@@ -11,7 +11,9 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile38`, function (sprite, 
     if (controller.B.isPressed()) {
         game.showLongText("A pressure plate with a carving of a west facing arrow", DialogLayout.Bottom)
     }
-    music.play(music.createSoundEffect(WaveShape.Triangle, 300, 200, 255, 72, 75, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
+    if (controller.A.isPressed()) {
+    	
+    }
 })
 controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.setImage(assets.image`myImage`)
@@ -42,6 +44,9 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile34`, function (sprite, 
     mySprite.setPosition(120, 30)
     mySprite.setVelocity(0, 0)
 })
+/**
+ * North sun west south east
+ */
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile7`, function (sprite, location) {
     if (controller.B.isPressed()) {
         game.showLongText("Nothing special just normal shelf stocked with supplies", DialogLayout.Bottom)
@@ -76,23 +81,34 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile9`, function (sprite, l
     }
     mySprite.x += 5
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile42`, function (sprite, location) {
+    if (Puzzle2A_1 == 7) {
+    	
+    } else {
+        Puzzle2A_1 = 0
+        game.showLongText("The door does not open and the 5 pressure plates click back into place", DialogLayout.Bottom)
+    }
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile39`, function (sprite, location) {
     if (controller.B.isPressed()) {
         game.showLongText("A pressure plate with a carving of a south facing arrow", DialogLayout.Bottom)
     }
-    music.play(music.createSoundEffect(WaveShape.Triangle, 300, 200, 255, 72, 75, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
+    if (controller.A.isPressed()) {
+    	
+    }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile37`, function (sprite, location) {
     if (controller.B.isPressed()) {
         game.showLongText("A pressure plate with a carving of an east facing arrow", DialogLayout.Bottom)
     }
-    music.play(music.createSoundEffect(WaveShape.Triangle, 300, 200, 255, 72, 75, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile40`, function (sprite, location) {
     if (controller.B.isPressed()) {
         game.showLongText("A pressure plate with a carving of a sun in the middle", DialogLayout.Bottom)
     }
-    music.play(music.createSoundEffect(WaveShape.Triangle, 300, 200, 255, 72, 75, SoundExpressionEffect.None, InterpolationCurve.Curve), music.PlaybackMode.UntilDone)
+    if (controller.A.isPressed()) {
+    	
+    }
 })
 controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.setImage(img`
@@ -149,6 +165,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile35`, function (sprite, 
         game.showLongText("It says \"Over broken ground the secret dwells, Guarded softly on silent shelfs, Pieces parted like scattered tricks, Count them true, they number six, Each a shard that locks and mends, Key fragments waiting where the riddle ends.\"", DialogLayout.Bottom)
     }
 })
+let Puzzle2A_1 = 0
 let mySprite: Sprite = null
 let Puzzle1A_1 = 0
 Puzzle1A_1 = 0
