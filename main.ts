@@ -83,7 +83,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile9`, function (sprite, l
     mySprite.x += 5
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile42`, function (sprite, location) {
-    if (Puzzle2A_1 == 18) {
+    if (Puzzle2A_1 == 114) {
         game.splash("win")
     } else {
         Puzzle2A_1 = 8
@@ -162,6 +162,7 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
     Puzzle1A_1 = 6
+    game.splash(Puzzle2A_1)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile10`, function (sprite, location) {
     if (controller.B.isPressed()) {
