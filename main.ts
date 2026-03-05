@@ -7,6 +7,9 @@ namespace SpriteKind {
     export const Door = SpriteKind.create()
     export const Puzzle1A = SpriteKind.create()
 }
+/**
+ * North sun west south east
+ */
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile38`, function (sprite, location) {
     if (controller.B.isPressed()) {
         game.showLongText("A pressure plate with a carving of a west facing arrow", DialogLayout.Bottom)
@@ -45,9 +48,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile34`, function (sprite, 
     mySprite.setPosition(120, 30)
     mySprite.setVelocity(0, 0)
 })
-/**
- * North sun west south east
- */
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile7`, function (sprite, location) {
     if (controller.B.isPressed()) {
         game.showLongText("Nothing special just normal shelf stocked with supplies", DialogLayout.Bottom)
