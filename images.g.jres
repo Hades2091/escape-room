@@ -19,25 +19,25 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "myImage0"
     },
-    "image4": {
-        "data": "hwQQABAAAAAPAP8A8A8A8P///////f//3d3d3d3d3d8dER0RERHR3R0RERER8RERHf8fEREfERH9X/8R8R8REf1V9f8f/x///V//8RER/x8d/x8RHxHxER0RERERERERHRERERERERHdHRERERHd3f/d3d3d3f3f8P//////D/8A8P8AAP8A8A==",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "myImage1"
-    },
-    "image5": {
-        "data": "hwQQABAAAAAPAP8A8A8A8P///////f//3d3d3d3d3d8dERERERHR3R3xHxERERERHZ/5EfEfEREdnx8R8fkREf2ZHxGf+f///ZkfEZ/5//8dn/n/nx8RER3/mZmZHxERHfH///8fERHdHRERERHd3f/d3d3d3f3f8P//////D/8A8P8AAP8A8A==",
-        "mimeType": "image/x-mkcd-f4",
-        "displayName": "myImage2"
-    },
     "image7": {
-        "data": "hwQQABAAAAAPAP8A8A8A8P///////f//3d3d3d3d3d8dERERERHR3R3xHxERERERHZ/5EfEfEREdnx8R8fkREf2ZHxGf+f///ZkfEZ/5//8dn/n/nx8RER3/mZmZHxERHfH///8fERHdHRERERHd3f/d3d3d3f3f8P//////D/8A8P8AAP8A8A==",
+        "data": "hwQQABAAAAAPAP8A8A8A8P///////f//3d3d3d3d3d8dEf8fERHR3R0R8R8RERERHRER/xH/Ef8dEf////H/Hx3xERERERERHR8REREREREd8R/x/////x0R8f8R/xHxHRERERH/ERHdHRER8R/d3f/d3d3d3f3f8P//////D/8A8P8AAP8A8A==",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "myImage4"
     },
     "image6": {
-        "data": "hwQQABAAAAAPAP8A8A8A8P///////f//3d3d3d3d3d8dEf8fERHR3R0R8R8RERERHRER/xH/Ef8dEf////H/Hx3xERERERERHR8REREREREd8R/x/////x0R8f8R/xHxHRERERH/ERHdHRER8R/d3f/d3d3d3f3f8P//////D/8A8P8AAP8A8A==",
+        "data": "hwQQABAAAAAPAP8A8A8A8P///////f//3d3d3d3d3d/9/xERERHR3f0RH/8REf8RHxEfERERERH/ER8R/xER8f0R8RERER8R/RHxEREREf/9EfERHxERER0fHxEREf8RHR8f/xERERHd/R8R8R/d3f/d3d3d3f3f8P//////D/8A8P8AAP8A8A==",
         "mimeType": "image/x-mkcd-f4",
         "displayName": "myImage3"
+    },
+    "image5": {
+        "data": "hwQQABAAAAAPAP8A8A8A8P///////f//3d3d3d3d3d8dERERERHR3R3xHxERERERHR/xEfEfEREdHx8R8fEREf0RHxEf8f///REfER/x//8dH/H/Hx8RER3/ERERHxERHfH///8fERHdHRERERHd3f/d3d3d3f3f8P//////D/8A8P8AAP8A8A==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage2"
+    },
+    "image4": {
+        "data": "hwQQABAAAAAPAP8A8A8A8P///////f//3d3d3d3d3d8dER0RERHR3R0RERER8RERHf8fEREfERH9H/8R8R8REf0R8f8f/x///R//8RER/x8d/x8RHxHxER0RERERERERHRERERERERHdHRERERHd3f/d3d3d3f3f8P//////D/8A8P8AAP8A8A==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage1"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",
