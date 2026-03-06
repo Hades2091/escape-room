@@ -38,6 +38,11 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile6`, function (sprite, l
         mySprite.y += 10
     }
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile45`, function (sprite, location) {
+    if (controller.B.isPressed()) {
+        game.showLongText("A set of robes white the gold adornments lays there. a vivid red stain of blood marks the center of the chest", DialogLayout.Bottom)
+    }
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile34`, function (sprite, location) {
     story.startCutscene(function () {
         color.startFade(color.originalPalette, color.Black)
@@ -148,12 +153,24 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile36`, function (sprite, 
         Puzzle2A_1 += Puzzle2A_1 / 4
     }
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile44`, function (sprite, location) {
+    if (controller.B.isPressed()) {
+        game.showLongText("You look through the pockets in the robe and find a book with a set of pictures", DialogLayout.Bottom)
+        mySprite.setVelocity(0, 0)
+        mySprite3 = sprites.create(assets.image`myImage0`, SpriteKind.Projectile)
+    }
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile8`, function (sprite, location) {
     if (controller.B.isPressed()) {
         game.showLongText("You find a key shard. You need 6. Find another special shelf", DialogLayout.Bottom)
     }
     Puzzle1A_1 += 1
     mySprite.x += 5
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile43`, function (sprite, location) {
+    if (controller.B.isPressed()) {
+        game.showLongText("The hood is empty as if the person who was in these robes before was disintegrated", DialogLayout.Bottom)
+    }
 })
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.setImage(assets.image`Character0`)
@@ -177,6 +194,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile35`, function (sprite, 
         game.showLongText("It says \"Over broken ground the secret dwells, Guarded softly on silent shelfs, Pieces parted like scattered tricks, Count them true, they number six, Each a shard that locks and mends, Key fragments waiting where the riddle ends.\"", DialogLayout.Bottom)
     }
 })
+let mySprite3: Sprite = null
 let Puzzle2A_1 = 0
 let mySprite: Sprite = null
 let Puzzle1A_1 = 0
