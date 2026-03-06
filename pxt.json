@@ -6,7 +6,9 @@
         "animation": "*",
         "arcade-story": "github:microsoft/arcade-storytelling#v1.0.3",
         "Color Fading": "github:jwunderl/pxt-color#v0.2.3",
-        "arcade-tile-util": "github:microsoft/arcade-tile-util#v1.2.0"
+        "arcade-tile-util": "github:microsoft/arcade-tile-util#v1.2.0",
+        "arcade-character-animations": "github:microsoft/arcade-character-animations#v0.1.0",
+        "arcade-minimap": "github:microsoft/arcade-minimap#v0.6.1"
     },
     "files": [
         "main.blocks",
@@ -22,7 +24,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "2.0.63",
+        "target": "4.0.10",
         "targetId": "arcade"
     },
     "supportedTargets": [
