@@ -88,7 +88,8 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile9`, function (sprite, l
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile42`, function (sprite, location) {
     if (Puzzle2A_1 == 114) {
-        game.splash("win")
+        tiles.setCurrentTilemap(tilemap`level0`)
+        mySprite.y = 200
     } else {
         Puzzle2A_1 = 8
         game.showLongText("The door does not open and the 5 pressure plates click back into place", DialogLayout.Bottom)
@@ -111,6 +112,17 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile37`, function (sprite, 
         game.showLongText("A click resonates as the pressure plate sinks into the floor of the chamber", DialogLayout.Bottom)
         Puzzle2A_1 += Puzzle2A_1 * 2
     }
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile54`, function (sprite, location) {
+    story.startCutscene(function () {
+        color.startFade(color.originalPalette, color.Black)
+        color.startFade(color.Black, color.originalPalette)
+        story.cancelAllCutscenes()
+    })
+    tiles.setCurrentTilemap(tilemap`level2`)
+    mySprite.setPosition(120, 200)
+    mySprite.setVelocity(0, 0)
+    Tilemaps = 0
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile40`, function (sprite, location) {
     if (controller.B.isPressed()) {
@@ -189,6 +201,7 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
     Puzzle1A_1 = 6
+    Puzzle2A_1 = 114
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile10`, function (sprite, location) {
     if (controller.B.isPressed()) {
