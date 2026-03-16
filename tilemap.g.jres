@@ -357,6 +357,36 @@
         "tilemapTile": true,
         "displayName": "myTile56"
     },
+    "tile59": {
+        "data": "hwQQABAAAADMu929OzPL3Lzdvd3dO7Pc3TPd3d0z3d3/+8z8z8y///z7z/zP/L/P+7vPv/v8u7/8/////P//z/y7+7u7v7vPxs/7u7u//GzGz/u7u7/7bMa/+8u7v/tsxvz7u7u/z2vG/Pu7vL/fbMbc/7u7/8xsZsz8u7vPzGZmZsz//8tmZg==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile57"
+    },
+    "tile60": {
+        "data": "hwQQABAAAABmZsz//8tmZmbM/Lu7z8xmxtz/u7v/zGzG/Pu7vL/fbMb8+7u7v89rxr/7y7u/+2zGz/u7u7/7bMbP+7u7v/xs/Lv7u7u/u8/8/////P//z/u7z7/7/Lu//PvP/M/8v8//+8z8z8y//90z3d3dM93dvN293d07s9zMu929OzPL3A==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile58"
+    },
+    "tile61": {
+        "data": "hwQQABAAAADd/bzMZmZmZsz9///MvMxmvL27v//PzWw7/b+/vPvPbDPD/7+7u/vMs8PM/////7/Tzfy/u7u7+9v9v7y7u7z72/2/v7u8u/vdzfy/u7u7+73NzP/////P3c3/v7u7+8zb87+/zPvfbNuzu7//z8xsvP3//8zMzGbM/bzMZmZmZg==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile59"
+    },
+    "tile62": {
+        "data": "hwQQABAAAABmZmZmzMvfzGbMzMz//9/Lxsz8//u7O73G/b/M+/s/vcy/u7v7/9zd/P/////M3Nu/u7u7+8/c3b+7y7v7+9+9v8u7u8v7372/u7u7+8/cPfv/////zDw7zL+7u/v/PDPG/L/L+/vfs8bc/P/7u9vLZszLzP//38xmZmZmzMvf3Q==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "myTile60"
+    },
+    "tile63": {
+        "data": "hwQQABAAAABmZmZmZmZmZmZoZplpZmaZdoeZ2ZlmZtlmd9ndnWaZ2Xdm2dGdmdnddmfZ0d3d3R1mdtnR3RHdEWZ32dEdEdERZofZ0R0R0RFmZtnR0RHdEWZm2dHd3d0dZmbZ0Z2Z2d1mZtndnWaZ2WZmmdmZZmbZZmZmmWlmZplmZmZmZmZmZg==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "tileDarkGrass3"
+    },
     "level1": {
         "id": "level1",
         "mimeType": "application/mkcd-tilemap",
@@ -430,7 +460,7 @@
     "level5": {
         "id": "level5",
         "mimeType": "application/mkcd-tilemap",
-        "data": "MTAxMzAwMTMwMDA2MDUwNTA1MDUwNTA1MDUwNTA1MDUwNTA1MDUwNTA1MDUwNTA3MDMwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDIwMzAxMDYwNDA0MDQwNDA0MDQwMTA0MDQwNDA0MDQwNDA3MDEwMjAzMDEwMjBiMGIwYjBjMGIwYjBlMGIwYjBiMGIwYjBiMDMwMTAyMDMwMTAyMGIwYjBiMGQwYjBiMGUwYjBiMGIwZDBiMGIwMzAxMDIwMzAxMDIwYjBiMGMwYjBiMGIwZTBiMGIwYjBjMGIwYjAzMDEwMjAzMDEwMjBiMGIwZDBiMGIwYzBlMGMwYjBiMGIwYjBiMDMwMTAyMDMwMTAyMGIwYjBkMGIwYjBiMGUwYjBiMGIwYjBkMGMwMzAxMDIwMzAxMDIwYjBiMGIwYjBiMGIwZTBiMGIwYjBiMGIwYjAzMDEwMjAzMDEwMTBmMGYwZjBmMGYwZjAxMGYwZjBmMGYwZjBmMDEwMTAyMDMwMTAyMGIwZDBiMGIwYjBiMGUwYjBiMGIwYjBiMGIwMzAxMDIwMzAxMDIwYjBiMGIwYjBkMGIwZTBiMGIwYjBiMGIwYjAzMDEwMjAzMDEwMjBiMGIwYzBiMGIwZDBlMGIwYjBiMGIwYzBiMDMwMTAyMDMwMTAyMGIwYjBiMGIwYjBiMGUwYjBiMGMwYjBiMGIwMzAxMDIwMzAxMDIwYjBiMGIwYjBiMGIwZTBiMGIwYjBkMGIwYjAzMDEwMjAzMDEwMjBiMGIwYjBkMGMwYjBlMGIwYjBiMGIwYjBiMDMwMTAyMDMwMTA4MDUwNTA1MDUwNTA1MDEwNTA1MDUwNTA1MDUwOTAxMDIwMzAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMjA4MDQwNDA0MDQwNDA0MDQwNDBhMDQwNDA0MDQwNDA0MDQwNDA5MjIyMjIyMjIyMjIyMjIyMjIyMjIwMDAwMDAwMDAwMDAwMDAwMjAwMjIyMjIyMjAyMjIyMjIyMDIyMjIwMDAwMDAwMDAwMDAwMjAyMDAyMDIwMDAwMDAwMDAwMDAwMjIyMjAwMDAwMDAwMDAwMDAyMDIwMDIwMjAwMDAwMDAwMDAwMDAyMjIyMDAwMDAwMDAwMDAwMDIwMjAwMjAyMDAwMDAwMDAwMDAwMDIyMjAwMDAwMDAwMDAwMDAwMDAyMDAyMDIwMDAwMDAwMDAwMDAwMjIyMjAwMDAwMDAwMDAwMDAyMDIwMDIwMjAwMDAwMDAwMDAwMDAyMjIyMDAwMDAwMDAwMDAwMDIwMjAwMjAyMDAwMDAwMDAwMDAwMDIyMjIwMDAwMDAwMDAwMDAwMjAyMDAyMjIyMjIyMDIyMjIyMjIwMjIyMDAwMDAwMDAwMDAwMDAwMDIwMjIyMjIyMjIwMjIyMjIyMjIyMDI=",
+        "data": "MTAxMzAwMTMwMDA2MDUwNTA1MDUwNTA1MDUwNTA1MDUwNTA1MDUwNTA1MDUwNTA3MDMwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDIwMzAxMDYxMjEyMTIxMjEyMTIwMTEyMTIxMjEyMTIxMjA3MDEwMjAzMDExMDBiMGIwYjBjMGIwYjBlMGIwYjBiMGIwYjBiMTEwMTAyMDMwMTEwMGIwYjBiMGQwYjBiMGUwYjBiMGIwZDBiMGIxMTAxMDIwMzAxMTAwYjBiMGMwYjBiMGIwZTBiMGIwYjBjMGIwYjExMDEwMjAzMDExMDBiMGIwZDBiMGIwYzBlMGMwYjBiMGIwYjBiMTEwMTAyMDMwMTEwMGIwYjBkMGIwYjBiMGUwYjBiMGIwYjBkMGMxMTAxMDIwMzAxMTAwYjBiMGIwYjBiMGIwZTBiMGIwYjBiMGIwYjExMDEwMjAzMDEwMTBmMGYwZjBmMGYwZjAxMGYwZjBmMGYwZjBmMDEwMTAyMDMwMTEwMGIwZDBiMGIwYjBiMGUwYjBiMGIwYjBiMGIxMTAxMDIwMzAxMTAwYjBiMGIwYjBkMGIwZTBiMGIwYjBiMGIwYjExMDEwMjAzMDExMDBiMGIwYzBiMGIwZDBlMGIwYjBiMGIwYzBiMTEwMTAyMDMwMTEwMGIwYjBiMGIwYjBiMGUwYjBiMGMwYjBiMGIxMTAxMDIwMzAxMTAwYjBiMGIwYjBiMGIwZTBiMGIwYjBkMGIwYjExMDEwMjAzMDExMDBiMGIwYjBkMGMwYjBlMGIwYjBiMGIwYjBiMTEwMTAyMDMwMTA4MTMxMzEzMTMxMzEzMDExMzEzMTMxMzEzMTMwOTAxMDIwMzAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMjA4MDQwNDA0MDQwNDA0MDQwNDBhMDQwNDA0MDQwNDA0MDQwNDA5MjIyMjIyMjIyMjIyMjIyMjIyMjIwMDAwMDAwMDAwMDAwMDAwMjAwMjIyMjIyMjAyMjIyMjIyMDIyMjIwMDAwMDAwMDAwMDAwMjAyMDAyMDIwMDAwMDAwMDAwMDAwMjIyMjAwMDAwMDAwMDAwMDAyMDIwMDIwMjAwMDAwMDAwMDAwMDAyMjIyMDAwMDAwMDAwMDAwMDIwMjAwMjAyMDAwMDAwMDAwMDAwMDIyMjAwMDAwMDAwMDAwMDAwMDAyMDAyMDIwMDAwMDAwMDAwMDAwMjIyMjAwMDAwMDAwMDAwMDAyMDIwMDIwMjAwMDAwMDAwMDAwMDAyMjIyMDAwMDAwMDAwMDAwMDIwMjAwMjAyMDAwMDAwMDAwMDAwMDIyMjIwMDAwMDAwMDAwMDAwMjAyMDAyMjIyMjIyMDIyMjIyMjIwMjIyMDAwMDAwMDAwMDAwMDAwMDIwMjIyMjIyMjIwMjIyMjIyMjIyMDI=",
         "tileset": [
             "myTiles.transparency16",
             "myTiles.tile2",
@@ -447,7 +477,11 @@
             "sprites.castle.tileDarkGrass2",
             "sprites.castle.tileDarkGrass1",
             "myTiles.tile57",
-            "myTiles.tile58"
+            "myTiles.tile58",
+            "myTiles.tile59",
+            "myTiles.tile60",
+            "myTiles.tile61",
+            "myTiles.tile62"
         ],
         "displayName": "level0"
     },
