@@ -50,7 +50,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile34`, function (sprite, 
     tiles.setCurrentTilemap(tilemap`level`)
     mySprite.setPosition(120, 30)
     mySprite.setVelocity(0, 0)
-    Tilemaps = 0
+    Tilemaps = 1
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile7`, function (sprite, location) {
     if (controller.B.isPressed()) {
@@ -95,7 +95,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile42`, function (sprite, 
         })
         tiles.setCurrentTilemap(tilemap`level0`)
         mySprite.y = 280
-        Tilemaps = 0
+        Tilemaps = 3
         game.showLongText("A boom resonates through the chambers you have already pasted through. A series of thuds echos.", DialogLayout.Bottom)
     } else {
         Puzzle2A_1 = 8
