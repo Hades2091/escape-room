@@ -130,6 +130,12 @@ namespace myTiles {
     export const tile62 = image.ofBuffer(hex``);
     //% fixedInstance jres blockIdentity=images._tile
     export const tile63 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile64 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile65 = image.ofBuffer(hex``);
+    //% fixedInstance jres blockIdentity=images._tile
+    export const tile66 = image.ofBuffer(hex``);
 
     helpers._registerFactory("tilemap", function(name: string) {
         switch(helpers.stringTrim(name)) {
@@ -191,7 +197,7 @@ namespace myTiles {
 . . . . . . . . . . . . . . . . 
 `, [myTiles.transparency16,myTiles.tile25], TileScale.Sixteen);
             case "level0":
-            case "level5":return tiles.createTilemap(hex`130013000605050505050505050505050505050505050703010101010101010101010101010101010102030106121212121212011212121212120701020301100b0b0b0c0b0b0e0b0b0b0b0b0b1101020301100b0b0b0d0b0b0e0b0b0b0d0b0b1101020301100b0b0c0b0b0b0e0b0b0b0c0b0b1101020301100b0b0d0b0b0c0e0c0b0b0b0b0b1101020301100b0b0d0b0b0b0e0b0b0b0b0d0c1101020301100b0b0b0b0b0b0e0b0b0b0b0b0b1101020301010f0f0f0f0f0f010f0f0f0f0f0f0101020301100b0d0b0b0b0b0e0b0b0b0b0b0b1101020301100b0b0b0b0d0b0e0b0b0b0b0b0b1101020301100b0b0c0b0b0d0e0b0b0b0b0c0b1101020301100b0b0b0b0b0b0e0b0b0c0b0b0b1101020301100b0b0b0b0b0b0e0b0b0b0d0b0b1101020301100b0b0b0d0c0b0e0b0b0b0b0b0b11010203010813131313131301131313131313090102030101010101010101010101010101010101020804040404040404040a040404040404040409`, img`
+            case "level5":return tiles.createTilemap(hex`130013000605050505050505050505050505050505050703010101010101010101010101010101010102030106121212121212011212121212120701020301100b0b0b0c0b0b0e0b0b0b0b0b0b1101020301100b140b150b0b0e0b0b160d170b1101020301100b0b0c0b0b0b0e0b0b0b0c0b0b1101020301100b0b0d0b0b0c0e0c0b0b0b0b0b1101020301100b0b0d0b0b0b0e0b0b0b0b0d0c1101020301100b0b0b0b0b0b0e0b0b0b0b0b0b1101020301010f0f0f0f0f0f010f0f0f0f0f0f0101020301100b0d0b0b0b0b0e0b0b0b0b0b0b1101020301100b0b0b0b0d0b0e0b0b0b0b0b0b1101020301100b0b0c0b0b0d0e0b0b0b0b0c0b1101020301100b0b0b0b0b0b0e0b0b0c0b0b0b1101020301100b0b0b0b0b0b0e0b0b0b0d0b0b1101020301100b0b0b0d0c0b0e0b0b0b0b0b0b11010203010813131313131301131313131313090102030101010101010101010101010101010101020804040404040404040a040404040404040409`, img`
 2222222222222222222
 2.................2
 2.2222222.2222222.2
@@ -211,7 +217,7 @@ namespace myTiles {
 2.2222222.2222222.2
 2.................2
 222222222.222222222
-`, [myTiles.transparency16,myTiles.tile2,myTiles.tile51,myTiles.tile48,myTiles.tile49,myTiles.tile50,myTiles.tile52,myTiles.tile53,myTiles.tile54,myTiles.tile55,myTiles.tile56,sprites.castle.tileDarkGrass3,sprites.castle.tileDarkGrass2,sprites.castle.tileDarkGrass1,myTiles.tile57,myTiles.tile58,myTiles.tile59,myTiles.tile60,myTiles.tile61,myTiles.tile62], TileScale.Sixteen);
+`, [myTiles.transparency16,myTiles.tile2,myTiles.tile51,myTiles.tile48,myTiles.tile49,myTiles.tile50,myTiles.tile52,myTiles.tile53,myTiles.tile54,myTiles.tile55,myTiles.tile56,sprites.castle.tileDarkGrass3,sprites.castle.tileDarkGrass2,sprites.castle.tileDarkGrass1,myTiles.tile57,myTiles.tile58,myTiles.tile59,myTiles.tile60,myTiles.tile61,myTiles.tile62,myTiles.tile63,myTiles.tile64,myTiles.tile65,myTiles.tile66], TileScale.Sixteen);
         }
         return null;
     })
@@ -346,6 +352,12 @@ namespace myTiles {
             case "tile62":return tile62;
             case "tileDarkGrass3":
             case "tile63":return tile63;
+            case "tileDarkGrass0":
+            case "tile64":return tile64;
+            case "tileDarkGrass1":
+            case "tile65":return tile65;
+            case "tileDarkGrass2":
+            case "tile66":return tile66;
         }
         return null;
     })
