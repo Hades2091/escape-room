@@ -88,8 +88,14 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile9`, function (sprite, l
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile42`, function (sprite, location) {
     if (Puzzle2A_1 == 114) {
+        story.startCutscene(function () {
+            color.startFade(color.originalPalette, color.Black)
+            color.startFade(color.Black, color.originalPalette)
+            story.cancelAllCutscenes()
+        })
         tiles.setCurrentTilemap(tilemap`level0`)
-        mySprite.y = 200
+        mySprite.y = 280
+        Tilemaps = 0
     } else {
         Puzzle2A_1 = 8
         game.showLongText("The door does not open and the 5 pressure plates click back into place", DialogLayout.Bottom)
@@ -122,7 +128,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile54`, function (sprite, 
     tiles.setCurrentTilemap(tilemap`level2`)
     mySprite.setPosition(120, 200)
     mySprite.setVelocity(0, 0)
-    Tilemaps = 0
+    Tilemaps = 2
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile40`, function (sprite, location) {
     if (controller.B.isPressed()) {
