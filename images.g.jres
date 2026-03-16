@@ -44,6 +44,26 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "myImage3"
     },
+    "image4": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/DwAAAAAA8ET0DwAAAABPIkT/DwDwAC8iIkQPAPAPLyIiQg8AAP8vIiIiDwAAAC8iIiIPAAAALyIi8g8AAAAvIhH/AAAAAPAS8Q8AAAAAAP8PAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage1"
+    },
+    "image10": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAPD+AAAA8P///+QPAPAvmZn5RP7/L5KZmflE5P7w/////0///wAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage7"
+    },
+    "image11": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAADw/wAAAA8AAG9mDwAADwD/b2j2AADw/49oiPYAAAAAAGZm9gAAAAAAYGb2AAAAAABgZvYAAAAAZmaG9gAA8P9vhmj2AAAPAP9vZvgAAA8AAG+GDwD/AAAA8P8AAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage8"
+    },
+    "image12": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAADw7g8AAAAAAO/uDwAAAAAA/+4PAAAAAPDu7g8AAAAA8P/uDwAAAADw7u4PAAAAAPDu7g8AAAAA8P/uDwAAAADw7u4PAAAAAAD/7g8AAAAAAO/uDwAAAAAA8O4PAAAAAAAA/wAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "myImage9"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
