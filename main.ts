@@ -96,6 +96,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile42`, function (sprite, 
         tiles.setCurrentTilemap(tilemap`level0`)
         mySprite.y = 280
         Tilemaps = 0
+        game.showLongText("A boom resonates through the chambers you have already pasted through. A series of thuds echos.", DialogLayout.Bottom)
     } else {
         Puzzle2A_1 = 8
         game.showLongText("The door does not open and the 5 pressure plates click back into place", DialogLayout.Bottom)
