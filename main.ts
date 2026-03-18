@@ -97,7 +97,14 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile42`, function (sprite, 
         tiles.setCurrentTilemap(tilemap`level0`)
         mySprite.y = 280
         Tilemaps = 3
-        game.showLongText("A boom resonates through the chambers you have already pasted through. A series of thuds echos.", DialogLayout.Bottom)
+        show += 1
+        if (show == 1) {
+            game.showLongText("A boom resonates through the chambers you have already pasted through. A series of thuds echos.", DialogLayout.Bottom)
+            mySprite7 = sprites.create(assets.image`myImage1`, SpriteKind.Items)
+            mysprite8 = sprites.create(assets.image`myImage7`, SpriteKind.Items)
+            mysprite9 = sprites.create(assets.image`myImage8`, SpriteKind.Items)
+            mysprite10 = sprites.create(assets.image`myImage9`, SpriteKind.Items)
+        }
     } else {
         Puzzle2A_1 = 8
         game.showLongText("The door does not open and the 5 pressure plates click back into place", DialogLayout.Bottom)
@@ -229,6 +236,11 @@ let mySprite5: Sprite = null
 let mySprite4: Sprite = null
 let mySprite3: Sprite = null
 let mySprite2: Sprite = null
+let mysprite10: Sprite = null
+let mysprite9: Sprite = null
+let mysprite8: Sprite = null
+let mySprite7: Sprite = null
+let show = 0
 let Tilemaps = 0
 let Puzzle2A_1 = 0
 let mySprite: Sprite = null
