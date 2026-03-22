@@ -8,6 +8,15 @@ namespace SpriteKind {
     export const Puzzle1A = SpriteKind.create()
     export const Items = SpriteKind.create()
 }
+scene.onOverlapTile(SpriteKind.Player, assets.tile`tileDarkGrass1`, function (sprite, location) {
+    if (Pot_1 == 1) {
+        Pot_1 += 1
+        Key_1 += 1
+        tileUtil.replaceAllTiles(assets.tile`tileDarkGrass1`, assets.tile`tileDarkGrass6`)
+        tileUtil.replaceAllTiles(assets.tile`myTile72`, assets.tile`myTile71`)
+        sprites.destroy(mysprite9)
+    }
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile38`, function (sprite, location) {
     if (controller.B.isPressed()) {
         game.showLongText("A pressure plate with a carving of a west facing arrow", DialogLayout.Bottom)
@@ -35,6 +44,15 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile6`, function (sprite, l
         Tilemaps = 2
     } else {
         mySprite.y += 10
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`tileDarkGrass2`, function (sprite, location) {
+    if (Bread_1 == 1) {
+        Bread_1 += 1
+        Key_1 += 1
+        tileUtil.replaceAllTiles(assets.tile`tileDarkGrass2`, assets.tile`tileDarkGrass7`)
+        tileUtil.replaceAllTiles(assets.tile`myTile74`, assets.tile`myTile73`)
+        sprites.destroy(mysprite10)
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile45`, function (sprite, location) {
@@ -100,8 +118,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile42`, function (sprite, 
         show += 1
         if (show == 1) {
             game.showLongText("A boom resonates through the chambers you have already pasted through. A series of thuds echos.", DialogLayout.Bottom)
-            mysprite9 = sprites.create(assets.image`myImage8`, SpriteKind.Items)
-            mysprite10 = sprites.create(assets.image`myImage9`, SpriteKind.Items)
         }
     } else {
         Puzzle2A_1 = 8
@@ -239,6 +255,7 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
 controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
     Puzzle1A_1 = 6
     Puzzle2A_1 = 114
+    Key_1 = 4
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile62`, function (sprite, location) {
     if (controller.B.isPressed()) {
@@ -246,6 +263,14 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile62`, function (sprite, 
         mySprite7 = sprites.create(assets.image`myImage1`, SpriteKind.Items)
         mySprite7.follow(mySprite)
         Apple_1 = 1
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile68`, function (sprite, location) {
+    if (controller.B.isPressed()) {
+        game.showLongText("", DialogLayout.Bottom)
+        mysprite9 = sprites.create(assets.image`myImage8`, SpriteKind.Items)
+        mysprite9.follow(mySprite)
+        Pot_1 = 1
     }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile10`, function (sprite, location) {
@@ -261,6 +286,14 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile35`, function (sprite, 
         game.showLongText("It says \"Over broken ground the secret dwells, Guarded softly on silent shelfs, Pieces parted like scattered tricks, Count them true, they number six, Each a shard that locks and mends, Key fragments waiting where the riddle ends.\"", DialogLayout.Bottom)
     }
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile70`, function (sprite, location) {
+    if (controller.B.isPressed()) {
+        game.showLongText("", DialogLayout.Bottom)
+        mysprite10 = sprites.create(assets.image`myImage9`, SpriteKind.Items)
+        mysprite10.follow(mySprite)
+        Bread_1 = 1
+    }
+})
 let mySprite6: Sprite = null
 let mySprite5: Sprite = null
 let mySprite4: Sprite = null
@@ -269,12 +302,14 @@ let mySprite2: Sprite = null
 let mysprite8: Sprite = null
 let Dagger_1 = 0
 let mySprite7: Sprite = null
-let Key_1 = 0
 let Apple_1 = 0
-let mysprite10: Sprite = null
-let mysprite9: Sprite = null
 let show = 0
+let mysprite10: Sprite = null
+let Bread_1 = 0
 let Tilemaps = 0
+let mysprite9: Sprite = null
+let Key_1 = 0
+let Pot_1 = 0
 let Puzzle2A_1 = 0
 let mySprite: Sprite = null
 let Puzzle1A_1 = 0
@@ -414,5 +449,10 @@ Puzzle2A_1 = 8
 game.onUpdateInterval(100, function () {
     if (Tilemaps != 2) {
         sprites.destroyAllSpritesOfKind(SpriteKind.Food)
+    }
+    if (Key_1 == 4) {
+        Key_1 += 1
+        game.showLongText("You hear metallic clang as a key falls at the front of the room", DialogLayout.Bottom)
+        tileUtil.replaceAllTiles(assets.tile`myTile61`, assets.tile`myTile75`)
     }
 })
