@@ -398,4 +398,7 @@ game.onUpdateInterval(100, function () {
     if (Tilemaps != 2) {
         sprites.destroyAllSpritesOfKind(SpriteKind.Food)
     }
+    if (Apple_1 >= 2) {
+        sprites.destroy(mySprite7)
+    }
 })
