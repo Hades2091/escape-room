@@ -119,6 +119,14 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile39`, function (sprite, 
         Puzzle2A_1 += -1
     }
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`tileDarkGrass3`, function (sprite, location) {
+    if (Apple_1 == 1) {
+        Apple_1 += 1
+        Key_1 += 1
+        tileUtil.replaceAllTiles(assets.tile`tileDarkGrass3`, assets.tile`tileDarkGrass4`)
+        tileUtil.replaceAllTiles(assets.tile`myTile63`, assets.tile`myTile64`)
+    }
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile37`, function (sprite, location) {
     if (controller.B.isPressed()) {
         game.showLongText("A pressure plate with a carving of an east facing arrow", DialogLayout.Bottom)
@@ -206,9 +214,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile43`, function (sprite, 
         game.showLongText("The hood is empty as if the person who was in these robes before was disintegrated", DialogLayout.Bottom)
     }
 })
-/**
- * North sun west south east
- */
+// North sun west south east
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.setImage(assets.image`Character0`)
     music.setVolume(25)
@@ -217,6 +223,11 @@ controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
 controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
     Puzzle1A_1 = 6
     Puzzle2A_1 = 114
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile62`, function (sprite, location) {
+    mySprite7 = sprites.create(assets.image`myImage1`, SpriteKind.Items)
+    mySprite7.follow(mySprite)
+    Apple_1 = 1
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile10`, function (sprite, location) {
     if (controller.B.isPressed()) {
@@ -236,12 +247,14 @@ let mySprite5: Sprite = null
 let mySprite4: Sprite = null
 let mySprite3: Sprite = null
 let mySprite2: Sprite = null
-let mysprite10: Sprite = null
-let mysprite9: Sprite = null
-let mysprite8: Sprite = null
+let Key_1 = 0
+let Apple_1 = 0
 let mySprite7: Sprite = null
 let show = 0
 let Tilemaps = 0
+let mysprite10: Sprite = null
+let mysprite9: Sprite = null
+let mysprite8: Sprite = null
 let Puzzle2A_1 = 0
 let mySprite: Sprite = null
 let Puzzle1A_1 = 0
@@ -378,10 +391,9 @@ controller.moveSprite(mySprite)
 music.setVolume(25)
 music.play(music.createSong(hex`0078000408040400001c00010a006400f40164000004000000000000000000000000000500000425000000080001061c00200001082c00300001164000480002060f58005c00011470007400010f05001c000f0a006400f4010a00000400000000000000000000000000000000022a000000080001160c001000010820002800011230003400010f3c004000011648005000011670007800010806001c00010a006400f4016400000400000000000000000000000000000000025d0004000800010f080010000127100018000211221800200001222000280001292800300002082230003800012240004800012950005800012758006000020f2260006400012564006800011168007000012470007800012778008000012409010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c80068000000010001000400050001010800090001000c000d0001021000110001001800190001022000210001002400250001032800290001022c002d0001003800390001014000410001044800490002010450005100020104580059000101600061000100680069000103`), music.PlaybackMode.LoopingInBackground)
 Puzzle2A_1 = 8
-let mySprite7 = sprites.create(assets.image`myImage1`, SpriteKind.Items)
-let mysprite8 = sprites.create(assets.image`myImage7`, SpriteKind.Items)
-let mysprite9 = sprites.create(assets.image`myImage8`, SpriteKind.Items)
-let mysprite10 = sprites.create(assets.image`myImage9`, SpriteKind.Items)
+mysprite8 = sprites.create(assets.image`myImage7`, SpriteKind.Items)
+mysprite9 = sprites.create(assets.image`myImage8`, SpriteKind.Items)
+mysprite10 = sprites.create(assets.image`myImage9`, SpriteKind.Items)
 game.onUpdateInterval(100, function () {
     if (Tilemaps != 2) {
         sprites.destroyAllSpritesOfKind(SpriteKind.Food)
