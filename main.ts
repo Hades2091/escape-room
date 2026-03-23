@@ -294,6 +294,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile70`, function (sprite, 
         Bread_1 = 1
     }
 })
+let mySprite11: Sprite = null
 let mySprite6: Sprite = null
 let mySprite5: Sprite = null
 let mySprite4: Sprite = null
@@ -454,5 +455,7 @@ game.onUpdateInterval(100, function () {
         Key_1 += 1
         game.showLongText("You hear metallic clang as a key falls at the front of the room", DialogLayout.Bottom)
         tileUtil.replaceAllTiles(assets.tile`myTile61`, assets.tile`myTile75`)
+        mySprite11 = sprites.create(assets.image`myImage10`, SpriteKind.Items)
+        mySprite11.follow(mySprite)
     }
 })
