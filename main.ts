@@ -17,6 +17,11 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`tileDarkGrass1`, function (sp
         sprites.destroy(mysprite9)
     }
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile76`, function (sprite, location) {
+    game.splash("You win")
+    game.splash("It took you", Time)
+    pause(1e+22)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile38`, function (sprite, location) {
     if (controller.B.isPressed()) {
         game.showLongText("A pressure plate with a carving of a west facing arrow", DialogLayout.Bottom)
@@ -30,6 +35,9 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite.setImage(assets.image`myImage`)
     music.setVolume(25)
     music.play(music.createSong(hex`0078000408020109010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c8001800000001000100080009000100100011000100180019000100`), music.PlaybackMode.UntilDone)
+    if (Key_2 == 1) {
+        mySprite.setImage(assets.image`myImage11`)
+    }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile6`, function (sprite, location) {
     if (Puzzle1A_1 >= 6) {
@@ -98,6 +106,9 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
         `)
     music.setVolume(25)
     music.play(music.createSong(hex`0078000408020109010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c8001800000001000100080009000100100011000100180019000100`), music.PlaybackMode.UntilDone)
+    if (Key_2 == 1) {
+        mySprite.setImage(assets.image`myImage12`)
+    }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile9`, function (sprite, location) {
     if (controller.B.isPressed()) {
@@ -151,6 +162,12 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile37`, function (sprite, 
         Puzzle2A_1 += Puzzle2A_1 * 2
     }
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile16`, function (sprite, location) {
+    mySprite.y += -5
+    if (controller.B.isPressed()) {
+        game.showLongText("An iron grate bars the way out", DialogLayout.Bottom)
+    }
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile54`, function (sprite, location) {
     story.startCutscene(function () {
         color.startFade(color.originalPalette, color.Black)
@@ -201,6 +218,18 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
         `)
     music.setVolume(25)
     music.play(music.createSong(hex`0078000408020109010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c8001800000001000100080009000100100011000100180019000100`), music.PlaybackMode.UntilDone)
+    if (Key_2 == 1) {
+        mySprite.setImage(assets.image`myImage13`)
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile17`, function (sprite, location) {
+    mySprite.y += -5
+    if (Key_2 == 1) {
+        if (controller.B.isPressed()) {
+            game.showLongText("You hear a click as the key turns and the iron grate lifts from over the passageway", DialogLayout.Bottom)
+            tileUtil.replaceAllTiles(assets.tile`myTile16`, assets.tile`myTile76`)
+        }
+    }
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile36`, function (sprite, location) {
     if (controller.B.isPressed()) {
@@ -213,7 +242,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile36`, function (sprite, 
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile66`, function (sprite, location) {
     if (controller.B.isPressed()) {
-        game.showLongText("", DialogLayout.Bottom)
+        game.showLongText("You pick up a dagger", DialogLayout.Bottom)
         mysprite8 = sprites.create(assets.image`myImage7`, SpriteKind.Items)
         mysprite8.follow(mySprite)
         Dagger_1 = 1
@@ -248,9 +277,21 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile43`, function (sprite, 
 })
 // North sun west south east
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
-    mySprite.setImage(assets.image`Character0`)
+    mySprite.setImage(assets.image`Character`)
     music.setVolume(25)
     music.play(music.createSong(hex`0078000408020109010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c8001e00000001000100080009000100100011000100180019000100200021000100`), music.PlaybackMode.UntilDone)
+    if (Key_2 == 1) {
+        mySprite.setImage(assets.image`Character0`)
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile75`, function (sprite, location) {
+    mySprite.y += 5
+    if (Key_2 == 0) {
+        if (controller.B.isPressed()) {
+            game.showLongText("You pick up the key for the door in the first room", DialogLayout.Bottom)
+            Key_2 += 1
+        }
+    }
 })
 controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
     Puzzle1A_1 = 6
@@ -259,7 +300,7 @@ controller.menu.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile62`, function (sprite, location) {
     if (controller.B.isPressed()) {
-        game.showLongText("", DialogLayout.Bottom)
+        game.showLongText("You pick up an apple", DialogLayout.Bottom)
         mySprite7 = sprites.create(assets.image`myImage1`, SpriteKind.Items)
         mySprite7.follow(mySprite)
         Apple_1 = 1
@@ -267,7 +308,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile62`, function (sprite, 
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile68`, function (sprite, location) {
     if (controller.B.isPressed()) {
-        game.showLongText("", DialogLayout.Bottom)
+        game.showLongText("You pick up a potion", DialogLayout.Bottom)
         mysprite9 = sprites.create(assets.image`myImage8`, SpriteKind.Items)
         mysprite9.follow(mySprite)
         Pot_1 = 1
@@ -288,13 +329,12 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile35`, function (sprite, 
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile70`, function (sprite, location) {
     if (controller.B.isPressed()) {
-        game.showLongText("", DialogLayout.Bottom)
+        game.showLongText("You pick up a loaf of bread", DialogLayout.Bottom)
         mysprite10 = sprites.create(assets.image`myImage9`, SpriteKind.Items)
         mysprite10.follow(mySprite)
         Bread_1 = 1
     }
 })
-let mySprite11: Sprite = null
 let mySprite6: Sprite = null
 let mySprite5: Sprite = null
 let mySprite4: Sprite = null
@@ -314,6 +354,10 @@ let Pot_1 = 0
 let Puzzle2A_1 = 0
 let mySprite: Sprite = null
 let Puzzle1A_1 = 0
+let Time = 0
+let Key_2 = 0
+Key_2 = 0
+Time = 0
 scene.setBackgroundImage(img`
     ................................................................................................................................................................
     ................................................................................................................................................................
@@ -448,6 +492,7 @@ music.setVolume(25)
 music.play(music.createSong(hex`0078000408040400001c00010a006400f40164000004000000000000000000000000000500000425000000080001061c00200001082c00300001164000480002060f58005c00011470007400010f05001c000f0a006400f4010a00000400000000000000000000000000000000022a000000080001160c001000010820002800011230003400010f3c004000011648005000011670007800010806001c00010a006400f4016400000400000000000000000000000000000000025d0004000800010f080010000127100018000211221800200001222000280001292800300002082230003800012240004800012950005800012758006000020f2260006400012564006800011168007000012470007800012778008000012409010e02026400000403780000040a000301000000640001c80000040100000000640001640000040100000000fa0004af00000401c80000040a00019600000414000501006400140005010000002c0104dc00000401fa0000040a0001c8000004140005d0076400140005d0070000c800029001f40105c201f4010a0005900114001400039001000005c201f4010500058403050032000584030000fa00049001000005c201f4010500058403c80032000584030500640005840300009001049001000005c201f4010500058403c80064000584030500c8000584030000f40105ac0d000404a00f00000a0004ac0d2003010004a00f0000280004ac0d9001010004a00f0000280002d00700040408070f0064000408070000c80003c800c8000e7d00c80019000e64000f0032000e78000000fa00032c01c8000ee100c80019000ec8000f0032000edc000000fa0003f401c8000ea901c80019000e90010f0032000ea4010000fa0001c8000004014b000000c800012c01000401c8000000c8000190010004012c010000c80002c800000404c8000f0064000496000000c80002c2010004045e010f006400042c010000640002c409000404c4096400960004f6090000f40102b80b000404b80b64002c0104f40b0000f401022003000004200300040a000420030000ea01029001000004900100040a000490010000900102d007000410d0076400960010d0070000c80068000000010001000400050001010800090001000c000d0001021000110001001800190001022000210001002400250001032800290001022c002d0001003800390001014000410001044800490002010450005100020104580059000101600061000100680069000103`), music.PlaybackMode.LoopingInBackground)
 Puzzle2A_1 = 8
 game.onUpdateInterval(100, function () {
+    Time += 0.1
     if (Tilemaps != 2) {
         sprites.destroyAllSpritesOfKind(SpriteKind.Food)
     }
@@ -455,7 +500,5 @@ game.onUpdateInterval(100, function () {
         Key_1 += 1
         game.showLongText("You hear metallic clang as a key falls at the front of the room", DialogLayout.Bottom)
         tileUtil.replaceAllTiles(assets.tile`myTile61`, assets.tile`myTile75`)
-        mySprite11 = sprites.create(assets.image`myImage10`, SpriteKind.Items)
-        mySprite11.follow(mySprite)
     }
 })
